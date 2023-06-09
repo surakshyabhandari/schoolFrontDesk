@@ -1,0 +1,21 @@
+server:
+  port:8080
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/SchoolFrontDesk
+    username: postgres
+    password: surakshya57!
+    driver-class-name: org.postgresql.Driver
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+
